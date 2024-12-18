@@ -2,7 +2,7 @@ const core = require('@actions/core'); // Import the GitHub Actions Core library
 
 try {
   // Get the 'name' input from the action.yml file
-  const name = process.env.name || "World";
+  const name = core.getInput('MY_NAME', { required: true });process.env.name || "World";
 
   // Create a greeting message
   const greeting = `Hello, ${name}!`;
