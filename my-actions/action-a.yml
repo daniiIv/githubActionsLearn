@@ -1,0 +1,10 @@
+name: "Hello World Action"
+description: "An action that greets a user"
+inputs:
+  MY_NAME:
+    description: "The name to greet"
+    required: true
+    default: "World"
+runs:
+  using: "node16"
+  main: "index.js"  # The entry point for your action
